@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Formulário de vagas para programadores">
+        <meta name = "robots" content = "noindex, nofollow">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Vagas para programadores</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/vagasProgramadores.css"/>
+    </head>
+    <body>
+
+        <!-- 1° serção - Cabeçalho -->
+        <header>
+            <h1>Vagas</h1>
+        </header>
+
+        <!-- Página principal -->
+        <main>
+
+            <!-- 2° serção - Formulários -->
+            <section>
+                <h2>Formulário de vagas para programadores</h2>
+                <p>Preencha o formulário abaixo com suas informações.</p>
+
+                <div>
+                    <form method = "get" action = "https://www.devmedia.com.br/codigos/formularios/aula7/">
+
+                        <!-- Formulário de texto -->
+                        <label>Nome</label>
+                        <input type = "text" name = "nome" class = "inputText" required/>
+
+                        <label>Data de Nascimento</label>
+                        <input type = "date" name = "data_nascimento" class = "inputText" required/>
+
+                        <label>Email</label>
+                        <input type = "email" name = "email" class = "inputText" placeholder = "email@provedor.com" required/>
+
+                        <!-- 1° Formulário de seleção única -->
+                        <label>Estado:</label>
+                        <select class = "select" name = "estado" required>
+                            <option value = "">Selecione o seu estdo</option>
+                            <option value = "AC">Acre</option>
+                            <option value = "AL">Alagoas</option>
+                            <option value = "AP">Amapá</option>
+                            <option value = "AM">Amazonas</option>
+                            <option value = "BA">Bahia</option>
+                            <option value = "CE">Ceará</option>
+                            <option value = "DF">Distrito Federal</option>
+                            <option value = "ES">Espírito Santo</option>
+                            <option value = "GO">Goiás</option>
+                            <option value = "MA">Maranhão</option>
+                            <option value = "MT">Mato Grosso</option>
+                            <option value = "MS">Mato do Grosso do Sul</option>
+                            <option value = "MG">Minas Gerais</option>
+                            <option value = "PA">Pará</option>
+                            <option value = "PB">Paraíba</option>
+                            <option value = "PR">Paraná</option>
+                            <option value = "PB">Pernabuco</option>
+                            <option value = "PI">Piauí</option>
+                            <option value = "RJ">Rio de Janeiro</option>
+                            <option value = "RN">Rio Grando do Norte</option>
+                            <option value = "RS">Rio Grande do Sul</option>
+                            <option value = "RO">Rondônia</option>
+                            <option value = "RR">Roraima</option>
+                            <option value = "SC">Santa Catarina</option>
+                            <option value = "SP">São Paulo</option>
+                            <option value = "SE">Sergipe</option>
+                            <option value = "TO">Tocantins</option>
+                        </select>
+
+                        <!-- 2° Formulário de seleção multiplas -->
+                        <label>Tecnologias</label>
+                        <select class = "selectMultiple" name = "tecnologias[]" size = "6" multiple>
+                            <option value = "C">C</option>
+                            <option value = "C++">C++</option>
+                            <option value = "C#">C#</option>
+                            <option value = "HTML">HTML</option>
+                            <option value = "Java">Java</option>
+                            <option value = "Javascript">Javascript</option>
+                            <option value = "PHP">PHP</option>
+                            <option value = "Phyton">Phyton</option>
+                            <option value = "Ruby">Ruby</option>
+                            <option value = "XML">XML</option>
+                        </select>
+
+                        <button type = "submit">Enviar Formulário</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- 3° serção - Rodapé -->
+        <footer>
+            <p>&copy;Copyright 2022 - Vagas</p>
+            <p>Desenvolvido por <span>Beatriz Alves</span></p>
+        </footer>
+    </body>
+</html>
